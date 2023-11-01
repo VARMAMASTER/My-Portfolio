@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
+
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(66,28,84);
+background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);;
+    position: sticky;
+    top:0px;
+    border: 1px  rgb(47, 91, 91);
+    
+}
+.logo{
+    font-family: "Kaushan Script";
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(0,230,237);
+    
+}
+
+ul{
+    width: 40rem;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.navigator{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-decoration: none;
+    color: rgb(168, 241, 255);
+    transition: color 0.5s ease-in;
+    &:hover{
+        color: cyan;
+    }
+    
+}
+
+.navbutton{
+    background-color: rgb(50, 190, 190);
+    font-weight: bold;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    transition: box-shadow  0.4s ease-in-out;
+
+    &:hover{
+        color: rgb(36, 37, 37);
+        background-color: aquamarine;
+        cursor: pointer;
+        box-shadow: 5px 10px 5px rgb(68, 95, 86) ;
+    }
+    
+}
