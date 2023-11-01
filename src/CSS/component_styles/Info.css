@@ -1,8 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
+
+
+
 .Info{
    background-image: url("../../images/intro_B1.jpg");
    background-size: cover;
    background-repeat: no-repeat;
    margin: 0px 0px 0px 0px;
    width: 100%;
-   height:750px;
+   height:658px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   
 }
+.information{
+   padding: 190px;
+   color: white;
+   font-family: sans-serif;
+}
+
+.information h2{
+   font-family: "Dancing Script";
+   font-size: 50px;
+   color: gold;
+}
+.information h1{
+   font-family: 'Courier New', Courier, monospace;
+   color: rgb(0,230,237);
+}
+.information p{
+   font-family: monospace;
+   font-weight: bolder;
+   font-size: 20px;
+   color: rgb(138, 110, 154);
+}
+.info_logos{
+   display: flex;
+   width: 150px;
+   justify-content: space-around;
+   align-items: center;
+}
+.github {
+   width:40px;
+   height:45px;
+  border-radius: 30px;
+   background-color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.5s ease-in-out;
+   &:hover{
+      background-color: rgb(65,29,84);
+   }
+   
+}
+.linkedin{
+   width:42px;
+   height:38px;
+   border-radius: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: white;
+   transition: background-color 0.5s ease-in-out;
+   &:hover{
+      background-color: rgb(0, 123, 255);
+   }
+
+}
+.my_image_div{
+   z-index: 0;
+   margin-left: 0px;
+   width:36%;
+   height:700px;
+   background-image: url("../../images/myimage.png");
+   background-repeat: no-repeat;
+   background-size: 100%;
+   filter: contrast(105%) drop-shadow(13px 15px 11px rgb(1, 31, 75));
+  
+}
+
