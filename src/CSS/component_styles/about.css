@@ -1,0 +1,17 @@
+.about{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    height: 1000px;
+    background: rgb(52,59,52);
+background: linear-gradient(121deg, rgb(28, 34, 28) 0%, rgb(14, 64, 81) 47%, rgba(14,47,81,1) 100%);
+}
+
+.about h1{
+    color :gold;
+    font-family: 'Courier New', Courier, monospace;
+   
+    
+
+}
