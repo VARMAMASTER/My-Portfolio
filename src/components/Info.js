@@ -4,7 +4,7 @@ import linkedin_icon from "../images/icons8-linkedin.svg";
 import github_icon from "../images/icons8-github-60.svg";
 
 export default function Info() {
-  const TechStack = ["html", "css","tailwind", "js","react","nodejs","expressjs","flutter","mongodb","firebase"]
+  const TechStack = ["html", "css","tailwind", "js","react","nodejs","java","spring","expressjs","flutter","mongodb","firebase"]
   return (
     <>
       <div className="Info">
@@ -34,7 +34,7 @@ export default function Info() {
             Tech Stack | 
           </h3>
           {TechStack.map((items)=>(
-            <img src={`https://skillicons.dev/icons?i=${items}`} alt={items} />
+            <img key={items} src={`https://skillicons.dev/icons?i=${items}`} alt={items} />
           ))}
           </div>
         </div>
