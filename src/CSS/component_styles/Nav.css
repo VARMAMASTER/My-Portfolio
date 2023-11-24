@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
 
 .nav{
-    z-index: 1;
+    z-index: 3;
+    position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background: rgb(66,28,84);
-background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);;
+    background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);;
     position: sticky;
     top:0px;
     border: 1px  rgb(47, 91, 91);
     
+}
+
+.hamburger{
+    display: none;
+    background-image: url(../../images/hamburger.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+
+ul{
+    list-style: none;
 }
 .logo{
     font-family: "Kaushan Script";
@@ -22,7 +37,7 @@ background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);;
     
 }
 
-ul{
+.ul{
     padding: 0;
     width: 60vw;
     display: flex;
@@ -62,23 +77,23 @@ ul{
     
 }
 
-.hamburger{
-    background-image: url(../../images/hamburger.png);
-    height: 80px;
-    font-weight: 100
-    ;
-}
+
 
 
 @media screen and (max-width: 710px) {
+    .hamburger{
+        display: inline;
+
+    }
     .nav{
-        justify-content: center;
-        height: 40px;
+        justify-content: space-around;
+        height: 60px;
     }
     .navbutton{
-        display: none;
+        width: 25%;
+        font-size: 12px;
     }
-    ul{
+    .ul{
         display: none;
     }
    

@@ -1,0 +1,46 @@
+.drawer{
+    position: absolute;
+    background-color: rgba(10, 16, 31, 1);
+    color: white;
+    height: 5vh;
+    z-index: 100;
+    width: 60%;
+    height: 100vh; 
+}
+
+.x_support{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cross{
+    margin: 8px;
+    background-image: url("../../images/cross.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40px;
+    width: 40px;
+}
+.sideul{
+    padding:0;
+    margin-left:35px ;   
+    width:80%;
+    height: 50%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sideitems{
+    font-weight: bold;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+    text-decoration: none;
+    color: rgb(168, 241, 255);
+    transition: color 0.5s ease-in;
+    &:hover{
+        color: cyan;
+    }
+}
