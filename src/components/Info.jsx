@@ -15,7 +15,7 @@ export default function Info() {
           <p>I'm very passionate and dedicated to my work.</p>
           <div className="info_logos">
             <div className="github">
-              <a href="https://github.com/VARMAMASTER" target="_blank">
+              <a href="https://github.com/VARMAMASTER" rel="noreferrer" target="_blank">
                 <img src={github_icon} alt="github" />
               </a>
             </div>

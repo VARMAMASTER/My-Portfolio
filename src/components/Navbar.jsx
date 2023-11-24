@@ -1,6 +1,5 @@
 import React from "react";
 import "../CSS/component_styles/Nav.css";
-
 export default function Navbar() {
   const nav_links = [
     {
@@ -39,6 +38,8 @@ export default function Navbar() {
         <button className="navbutton">
           Download Cv
         </button>
+
+        <div className="hamburger"></div>
        
       </nav>
     </>
