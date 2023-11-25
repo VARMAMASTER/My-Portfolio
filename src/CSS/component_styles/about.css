@@ -1,13 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Ephesis&family=Josefin+Sans&display=swap');
+
 .about{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 1000px;
+    height: max-content;
     background: rgb(52,59,52);
 background: linear-gradient(121deg, rgb(28, 34, 28) 0%, rgb(14, 64, 81) 47%, rgba(14,47,81,1) 100%);
 }
+.info{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10%;
+    width: 55%;
+    height: fit-content;
+    border: 2px solid cyan;
+}
+.about-left{
+    
+    margin: 10px;
+    background-image: url("../../images/about_img.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10%;
+    width: 350px;
+    height:350px;
+    
 
+}
+.about-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 95%;
+    padding: 10px;
+    border-radius: 10%;
+    border:3px solid #9a02d1;
+    color: gold;
+    width: 350px;
+    height:350px;
+    overflow: auto;
+    
+
+}
 .about h1{
     color :gold;
     font-family: 'Courier New', Courier, monospace;
+}
+
+.Education {
+    font-family: 'Josefin Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-card {
+    width: 300px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin: 10px;
+    text-align: center;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+.blue-card {
+    background: linear-gradient(to bottom right, #0066cc, #3399ff);
+}
+
+.violet-card {
+    background: linear-gradient(to bottom right, #800080, #cc99ff);
+}
+
+.blur-card {
+    background: linear-gradient(to bottom right, #4d4dff, #99ccff);
+}
+
+h2 {
+    color: #ffffff;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+    .education-card {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:600px){
+
+    .info{
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        border-radius: 10%;
+        width: 90%;
+        height: fit-content;
+        border: 2px solid cyan;
+    }
+
+
 }

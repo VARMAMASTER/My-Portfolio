@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Ephesis&family=Josefin+Sans&display=swap');
+.skills-container {
+    font-family: Josefin Sans;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap:wrap ;
+    background: rgb(7,53,53);
+    background: linear-gradient(29deg, rgba(7,53,53,1) 18%, rgba(4,98,105,1) 36%, rgba(46,8,57,1) 84%);
+    gap: 20px;
+    height: max-content;
+    width: 100vw;
+    margin: 0 auto;
+}
+.title{
+    margin: 10px 0px 10px 0px;
+    border: blue;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: gold;
+    font-size: 40px;
+    background-color: #11012e;
+    border: none;
+}
+
+.skill-card {
+    margin-bottom: 10px;
+    width: 30%;
+    height: 25vh;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.programming-languages {
+    background-color: #4285f4; /* Blue */
+}
+
+.front-end-technologies {
+    background-color: #34a853; /* Green */
+}
+
+.back-end-technologies {
+    background-color: #ea4335; /* Red */
+}
+
+.application-development {
+    background-color: #673ab7; /* Purple */
+}
+
+.data-science {
+    background-color: #ff9800; /* Orange */
+}
+
+.python-libraries {
+    background-color: #4caf50; /* Dark Green */
+}
+
+.skill-title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list-item {
+    margin-bottom: 8px;
+    color: #ffffff;
+}
+
+/* Media Queries */
+@media screen and (max-width: 540px) {
+    .skill-card {
+        width: 65%;
+        height: fit-content;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+        transition: transform 0.3s ease-in-out;
+    }
+
+   
+}
