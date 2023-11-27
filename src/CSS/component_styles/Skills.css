@@ -6,10 +6,12 @@
     justify-content: center;
     align-items: center;
     flex-wrap:wrap ;
-    background: rgb(7,53,53);
-    background: linear-gradient(29deg, rgba(7,53,53,1) 18%, rgba(4,98,105,1) 36%, rgba(46,8,57,1) 84%);
+    /* background: rgb(40,117,119);
+    background: linear-gradient(30deg, rgb(7, 74, 77) 4%, rgba(46,8,57,1) 43%, rgb(39, 0, 57) 97%); */
+    /* background: rgb(7,53,53);
+    background: linear-gradient(29deg, rgba(7,53,53,1) 18%, rgba(4,98,105,1) 36%, rgba(46,8,57,1) 84%); */
     gap: 20px;
-    height: max-content;
+    height: 80vh;
     width: 100vw;
     margin: 0 auto;
 }
@@ -28,7 +30,7 @@
 .skill-card {
     margin-bottom: 10px;
     width: 30%;
-    height: 25vh;
+    height: 27vh;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
@@ -40,28 +42,23 @@
 }
 
 .programming-languages {
-    background-color: #4285f4; /* Blue */
+    background-color: #1f55aa; /* Blue */
 }
 
 .front-end-technologies {
-    background-color: #34a853; /* Green */
+    background-color: #189b3b; /* Green */
 }
 
 .back-end-technologies {
-    background-color: #ea4335; /* Red */
+    background-color: #a92013; /* Red */
 }
 
-.application-development {
-    background-color: #673ab7; /* Purple */
-}
 
 .data-science {
-    background-color: #ff9800; /* Orange */
+    background-color: #be9f06; /* Orange */
 }
 
-.python-libraries {
-    background-color: #4caf50; /* Dark Green */
-}
+
 
 .skill-title {
     font-size: 1.8em;

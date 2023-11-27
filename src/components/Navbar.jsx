@@ -9,23 +9,23 @@ export default function Navbar() {
   const nav_links = [
     {
       name: "Home",
-      Link: "/Home",
+      Link: "#Home",
     },
     {
       name: "AboutMe",
-      Link: "/About",
+      Link: "#About",
     },
     {
       name: "Skills",
-      Link: "/Skills",
+      Link: "#Skills",
     },
     {
       name: "Internships",
-      Link: "/Internships",
+      Link: "#Internships",
     },
     {
       name: "Projects",
-      Link: "/Projects",
+      Link: "#Projects",
     },
   ];
   return (

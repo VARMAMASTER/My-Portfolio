@@ -6,7 +6,7 @@
    background-repeat: no-repeat;
    margin: 0px 0px 0px 0px;
    width: 100%;
-   height:max-content;
+   height:100vh;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
@@ -15,7 +15,7 @@
 
 .image_help{
    display: flex;
-   justify-content: start;
+   justify-content: flex-start;
 }
 .image_my{
    display: none;

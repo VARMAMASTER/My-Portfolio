@@ -7,8 +7,10 @@
     align-items: center;
     width: 100%;
     height: max-content;
-    background: rgb(52,59,52);
-background: linear-gradient(121deg, rgb(28, 34, 28) 0%, rgb(14, 64, 81) 47%, rgba(14,47,81,1) 100%);
+    /* background: rgb(40,117,119);
+    background: linear-gradient(30deg, rgb(7, 74, 77) 4%, rgba(46,8,57,1) 43%, rgb(39, 0, 57) 97%); */
+    /* background: rgb(52,59,52);
+background: linear-gradient(121deg, rgb(28, 34, 28) 0%, rgb(14, 64, 81) 47%, rgba(14,47,81,1) 100%); */
 }
 .info{
     padding: 10px;

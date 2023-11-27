@@ -1,6 +1,8 @@
+
 body{
     margin: 0%;
     padding: 0%;
     overflow-x:hidden ;
-    background-color: rgb(29,46,72);
+    background: rgb(12,63,64);
+background: linear-gradient(29deg, rgb(15, 103, 104) 9%, rgba(29,6,41,1) 38%, rgba(76,7,86,1) 56%, rgb(12, 130, 116) 94%);
 }

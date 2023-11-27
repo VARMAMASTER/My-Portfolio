@@ -1,71 +1,41 @@
-import React from 'react'
-import "../CSS/component_styles/Skills.css"
+import React from 'react';
+import "../CSS/component_styles/Skills.css";
+
+const skillsData = [
+  {
+    title: 'Programming Languages',
+    items: ['C++', 'Python', 'JavaScript', 'Dart', 'Data Structures and Algorithms']
+  },
+  {
+    title: 'Front End Technologies',
+    items: ['React', 'Flutter','Redux', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS']
+  },
+  {
+    title: 'Back End Technologies',
+    items: ['Node.js', 'Express.js', 'PostgreSQL', 'Mongo DB', 'Firebase']
+  },
+  {
+    title: 'Data Science',
+    items: ['Machine Learning', 'Deep Learning', 'SKlearn', 'Keras','NumPy', 'pandas']
+  },
+];
+
 export default function Skills() {
   return (
     <>
-    <div className='title'>Skills</div>
-    <div class="skills-container">
-    <div class="skill-card programming-languages">
-        <div class="skill-title">Programming Languages</div>
-        <ul class="skill-list">
-            <li class="skill-list-item">C++</li>
-            <li class="skill-list-item">Python</li>
-            <li class="skill-list-item">JavaScript</li>
-            <li class="skill-list-item">Dart</li>
-            <li class="skill-list-item">Data Structures and Algorithms</li>
-        </ul>
-    </div>
-
-    <div class="skill-card front-end-technologies">
-        <div class="skill-title">Front End Technologies</div>
-        <ul class="skill-list">
-            <li class="skill-list-item">React</li>
-            <li class="skill-list-item">Redux</li>
-            <li class="skill-list-item">HTML</li>
-            <li class="skill-list-item">CSS</li>
-            <li class="skill-list-item">Bootstrap</li>
-            <li class="skill-list-item">Tailwind CSS</li>
-        </ul>
-    </div>
-
-    <div class="skill-card back-end-technologies">
-        <div class="skill-title">Back End Technologies</div>
-        <ul class="skill-list">
-            <li class="skill-list-item">Node.js</li>
-            <li class="skill-list-item">Express.js</li>
-            <li class="skill-list-item">PostgreSQL</li>
-            <li class="skill-list-item">Mongo DB</li>
-            <li class="skill-list-item">Firebase</li>
-        </ul>
-    </div>
-
-    <div class="skill-card application-development">
-        <div class="skill-title">Application Development</div>
-        <ul class="skill-list">
-            <li class="skill-list-item">Flutter</li>
-        </ul>
-    </div>
-
-    <div class="skill-card data-science">
-        <div class="skill-title">Data Science</div>
-        <ul class="skill-list">
-            <li class="skill-list-item">Machine Learning</li>
-            <li class="skill-list-item">Deep Learning</li>
-            <li class="skill-list-item">Visualization</li>
-        </ul>
-    </div>
-
-    <div class="skill-card python-libraries">
-        <div class="skill-title">Python Libraries</div>
-        <ul class="skill-list">
-            <li class="skill-list-item">NumPy</li>
-            <li class="skill-list-item">pandas</li>
-            <li class="skill-list-item">matplotlib</li>
-            <li class="skill-list-item">SKlearn</li>
-            <li class="skill-list-item">Keras</li>
-        </ul>
-    </div>
-</div>
+      <div className='title'>Skills</div>
+      <div className="skills-container">
+        {skillsData.map((skill, index) => (
+          <div key={index} className={`skill-card ${skill.title.toLowerCase().replace(/\s+/g, '-')}`}>
+            <div className="skill-title">{skill.title}</div>
+            <ul className="skill-list">
+              {skill.items.map((item, i) => (
+                <li key={i} className="skill-list-item">{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
     </>
-  )
+  );
 }
