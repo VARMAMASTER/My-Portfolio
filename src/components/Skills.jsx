@@ -23,7 +23,8 @@ const skillsData = [
 export default function Skills() {
   return (
     <>
-      <div className='title'>Skills</div>
+    <div id='Skills'>
+      <div className='title' >Skills</div>
       <div className="skills-container">
         {skillsData.map((skill, index) => (
           <div key={index} className={`skill-card ${skill.title.toLowerCase().replace(/\s+/g, '-')}`}>
@@ -36,6 +37,7 @@ export default function Skills() {
           </div>
         ))}
       </div>
+    </div>
     </>
   );
 }

@@ -4,7 +4,8 @@ import "../CSS/component_styles/about.css"
 export default function About() {
   return (
     <>
-    <div className='about'>
+    <div id='About'>
+    <div className='about' >
       <h1>About Me</h1> 
       <div className='info'>
       <div className='about-left'></div>
@@ -37,6 +38,8 @@ With skills in Git, Docker, and AWS, I stay ahead in the ever-evolving software 
         </div>
     </div>
     </div>
+    </div>
+    
     </>
   )
 }

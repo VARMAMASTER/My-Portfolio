@@ -91,6 +91,7 @@
 
 }
 .my_image_div{
+   margin-top: 30px;
    /* border:2px solid red; */
    border-radius: 50%;
    width:553px;

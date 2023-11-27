@@ -45,6 +45,12 @@ ul{
     list-style: none;
 }
 
+.ul li{
+    :hover{
+        cursor: pointer;
+    }
+}
+
 .navigator{
     font-weight: bold;
     font-size: 18px;

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/component_styles/Nav.css";
+import { Link } from "react-scroll";
 import Sidedraw from "./Sidedrawer";
 export default function Navbar() {
   const [open_sidebar, Setsidebar] = useState(false);
@@ -9,23 +10,23 @@ export default function Navbar() {
   const nav_links = [
     {
       name: "Home",
-      Link: "#Home",
+      Link: "Home",
     },
     {
       name: "AboutMe",
-      Link: "#About",
+      Link: "About",
     },
     {
       name: "Skills",
-      Link: "#Skills",
+      Link: "Skills",
     },
     {
       name: "Internships",
-      Link: "#Internships",
+      Link: "Internships",
     },
     {
       name: "Projects",
-      Link: "#Projects",
+      Link: "Projects",
     },
   ];
   return (
@@ -41,9 +42,9 @@ export default function Navbar() {
         <ul className="ul">
           {nav_links.map((item) => (
             <li key={item.name}>
-              <a className="navigator" href={item.Link}>
+              <Link to={item.Link} spy={true} smooth={true} offset={0} onClick={""} className="navigator" >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>

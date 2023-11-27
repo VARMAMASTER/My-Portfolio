@@ -18,6 +18,7 @@ export default function Info() {
   ];
   return (
     <>
+    <div id="Home" >
       <div className="Info" >
         <div className="information">
           <div className="image_help">
@@ -64,6 +65,7 @@ export default function Info() {
       </div>
 
       <div className="gap"></div>
+    </div>
     </>
   );
 }

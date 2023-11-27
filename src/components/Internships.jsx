@@ -32,13 +32,15 @@ export default function Internships() {
         live: "#",
     }]
   return (
-    <div className="internships">
+    <div id="Internships">
+    <div className="internships" >
     <div className='Intern'>Internships</div>
     {intern_info.map((item)=>{
         return(<>
         <InfoCards intern_info={item} />
         </>)
     })}
+    </div>
     </div>
   )
 }

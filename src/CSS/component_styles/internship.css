@@ -1,6 +1,5 @@
-.internships{
-    /* background: rgb(40,117,119);
-background: linear-gradient(30deg, rgb(7, 74, 77) 4%, rgba(46,8,57,1) 43%, rgb(39, 0, 57) 97%); */
+#Internships{
+    padding-top: 42px;
 }
 .Intern{
     font-family: 'Courier New', Courier, monospace;
@@ -8,5 +7,4 @@ background: linear-gradient(30deg, rgb(7, 74, 77) 4%, rgba(46,8,57,1) 43%, rgb(3
     color: Gold;
     font-size: 35px;
     font-weight: bolder;
-    
 }
