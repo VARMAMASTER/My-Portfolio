@@ -18,7 +18,7 @@ export default function Internships() {
         time: " (may-2023 to July-2023)",
         company: "IIT Delhi",
         description: "This is real-time data visualization and dashboard application for the Smart Shearing Machine, integrating with a Firebase database to store and retrieve real-time machine data such as voltage, current, vibrations, and temperature. Implemented a variety of utilities to enhance functionality and user experience, resulting in improved monitoring and control capabilities.",
-        technology: ["flutter","firebase"],
+        technology: ["dart","flutter","firebase"],
         git : "https://github.com/VARMAMASTER/GraphSys",
         live:"#",
     },{
@@ -28,7 +28,7 @@ export default function Internships() {
         company:"Bureau of Indian Standards. ",
         technology:["R&D","Data Visualisation"],
         description:"Intern under Scientist D, the Director of the Smart Manufacturing Subdivision within the LITD department BIS. Made prestandardizations, landscape studies and Case studies for the implementation of Industry 4.0 in Indian MSMEs, this will be referred by the Scientist for making Indian Standards for Industry 4.0, as a part of the Internship I have visited the Schneider electric SM Plant as well as IISc Bangalore.",
-        git : "#",
+        git : "https://github.com/VARMAMASTER/BIS-Internship",
         live: "#",
     }]
   return (

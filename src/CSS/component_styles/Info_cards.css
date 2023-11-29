@@ -9,6 +9,7 @@
 }
 
 .infocard {
+    box-shadow:5px 5px 10px rgb(55, 156, 149);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -20,10 +21,11 @@
     border-radius: 30px;
 }
 .infocard-image{
+    box-shadow:5px 5px 10px 5px  rgb(64, 91, 114);
     border-radius: 20px;
     height: 80%;
     width: 45%;
-  }
+  } 
   .infocard-image img{
     border-radius: 20px;
       width: 100%;
