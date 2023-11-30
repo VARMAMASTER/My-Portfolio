@@ -15,22 +15,22 @@ I'm a highly skilled full-stack developer proficient in Python, C++, JavaScript,
 
 With skills in Git, Docker, and AWS, I stay ahead in the ever-evolving software industry. I'm passionate, hardworking, and committed to excellence in software development.</div>
       </div>
-      <div class="Education">
-        <div class="education-card blue-card">
+      <div className="Education">
+        <div className="education-card blue-card">
             <h2>Bachelor of Technology</h2>
             <p>Smart Manufacturing (2020 – 2024)</p>
             <p>Indian Institute of Information Technology, Design and Manufacturing, Jabalpur (IIITDMJ)</p>
             <p>CPI: 8.3</p>
         </div>
 
-        <div class="education-card violet-card">
+        <div className="education-card violet-card">
             <h2>Senior Secondary (XII)</h2>
             <p>2019</p>
             <p>Intermediate (MPC)- Loyola Junior College</p>
             <p>CPI: 9</p>
         </div>
 
-        <div class="education-card blur-card">
+        <div className="education-card blur-card">
             <h2>Secondary School Certificate (X)</h2>
             <p>2017</p>
             <p>Alphores Gen Next</p>

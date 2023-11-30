@@ -42,13 +42,13 @@ export default function Navbar() {
         <ul className="ul">
           {nav_links.map((item) => (
             <li key={item.name}>
-              <Link to={item.Link} spy={true} smooth={true} offset={0} onClick={""} className="navigator" >
+              <Link to={`${item.Link}`} spy={true} smooth={true} offset={0}  className="navigator" >
                 {item.name}
               </Link>
             </li>
           ))}
         </ul>
-        <button className="navbutton"><a href="https://drive.google.com/file/d/1ZOk9luujSyKr4Gj77rdvXl9qHiEDJ2v8/view?usp=drive_link" target="_blank">Download Cv</a></button>
+        <button className="navbutton"><a href="https://drive.google.com/file/d/1ZOk9luujSyKr4Gj77rdvXl9qHiEDJ2v8/view?usp=drive_link" target="_blank" rel="noreferrer">Download Cv</a></button>
       </nav>
     </>
   );

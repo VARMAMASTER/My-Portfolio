@@ -23,7 +23,7 @@ export default function WSA() {
           This website will be deployed sooner..........
         </div>
         <div className='wsa-scro' style={{ opacity: 1}}>
-          For code and Project Progress please visit my <a href="https://github.com/VARMAMASTER/OrderIt" target='_blank'>Github</a>
+          For code and Project Progress please visit my <a href="https://github.com/VARMAMASTER/OrderIt" target='_blank' rel="noreferrer">Github</a>
         </div>
         {images.map((items)=>(
         <img className= "wsaimages" key={items+78} src={`./images/InternFiles/wsa/${items}.png`} alt={items} />

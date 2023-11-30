@@ -37,16 +37,14 @@ export default function Internships() {
         type:"Demo",
 
     }]
-  return (
-    <div id="Internships">
-    <div className="internships" >
-    <div className='Intern'>Internships</div>
-    {intern_info.map((item)=>{
-        return(<>
-        <InfoCards intern_info={item} />
-        </>)
-    })}
-    </div>
-    </div>
-  )
+    return (
+        <div id="Internships">
+            <div className="internships">
+                <div className='Intern'>Internships</div>
+                {intern_info.map((item, index) => (
+                    <InfoCards key={index+"18"} intern_info={item} />
+                ))}
+            </div>
+        </div>
+    );
 }

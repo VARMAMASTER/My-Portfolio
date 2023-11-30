@@ -33,7 +33,7 @@ export default function Info() {
               <a
                 href="https://github.com/VARMAMASTER"
                 rel="noreferrer"
-                target="_blank">
+                target="_blank" >
                 <img src={github_icon} alt="github" />
               </a>
             </div>
