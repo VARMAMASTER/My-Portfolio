@@ -10,7 +10,7 @@ export default function IITD() {
     <div className='iitdmain'>
     <div className='app-title'>GraphSys</div>
     <div className='link-div'>For Download and test the application please clcik the link 👉
-      <a href="">{"  Click Here"}</a>
+      <a href="/opkj.vom">{"  Click Here"}</a>
     </div>
     <p className='iitd-p'>
       This is the data visualisation and dashboard applicaion built for monitoring the realtime data of the smart shearing machine
