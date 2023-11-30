@@ -64,10 +64,11 @@ ul{
     
 }
 
-.navbutton{
+.navbutton {
     background-color: rgb(50, 190, 190);
     font-weight: bold;
     font-family:  monospace;
+    
     border: none;
     border-radius: 25px;
     width: 12vw;
@@ -81,6 +82,11 @@ ul{
         box-shadow: 5px 10px 5px rgb(68, 95, 86) ;
     }
     
+}
+
+.navbutton a{
+    color: black;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 710px) {

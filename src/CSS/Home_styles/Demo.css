@@ -1,0 +1,35 @@
+.demo-nav{
+    z-index: 3;
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(66,28,84);
+    background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);
+    position: sticky;
+    top:0px;
+    border: 1px  rgb(47, 91, 91);
+        
+}
+
+.demo-navbutton{
+    background-color: rgb(50, 190, 190);
+    font-weight: bold;
+    font-size: 20px;
+    font-family:  monospace;
+    border: none;
+    border-radius: 25px;
+    width: 20vw;
+    height: 30px;
+    transition: box-shadow  0.4s ease-in-out;
+
+    &:hover{
+        color: rgb(36, 37, 37);
+        background-color: aquamarine;
+        cursor: pointer;
+        box-shadow: 5px 10px 5px rgb(68, 95, 86) ;
+    }
+    
+}

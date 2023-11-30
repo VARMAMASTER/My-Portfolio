@@ -25,7 +25,7 @@ export default function InfoCards({ intern_info }) {
           </div>
           <div className="infocard-buttons">
             <button className="infocard-button"><a href={intern_info.git} target="_blank">Git hub</a></button>
-            <button className="infocard-button"><a href={intern_info.live} target="_blank" >Live Demo</a></button>
+            <button className="infocard-button"><a href={intern_info.live} target="_blank" >{intern_info.type}</a></button>
           </div>
         </div>
       </div>

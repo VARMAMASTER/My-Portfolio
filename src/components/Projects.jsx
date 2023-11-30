@@ -12,6 +12,7 @@ export default function Projects() {
         description:"Site.com is easy-to-use website builder tool, in-house design services, and diverse e-commerce options. From DIY to professional support, Site.com helps businesses of all sizes thrive in the online landscape.",
         git: "https://github.com/VARMAMASTER/Site.com",
         live: "https://site-com-varma-master.vercel.app/",
+        type:"Go Live \u{1F855}",
     },{
         title: "Ultra-image-pro",
         Image: "",
@@ -21,6 +22,7 @@ export default function Projects() {
         technology: ["python","flask"],
         git : "",
         live:"",
+        type:"Go Live \u{1F855}",
     },{
         title:"portfolio Website",
         Image: "./images/port.png",
@@ -30,6 +32,7 @@ export default function Projects() {
         description:"At present your are in my portfolio website",
         git : "",
         live: "Home",
+        type:"Go Live \u{1F855}",
     }]
   return (
     <div className='Projects' id="Projects">

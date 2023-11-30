@@ -1,0 +1,41 @@
+.iitdmain{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.iitdimages{
+    margin-bottom:30px ;
+    width: 20vw;
+    height: 40vw;
+}
+
+.app-title{
+    font-size:40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    color: rgb(255, 191, 15);
+
+}
+.link-div{
+    margin-bottom: 20px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 35px;
+}
+
+.link-div a{
+    text-decoration: none;
+    color:rgb(50,3,19);
+}
+
+.iitd-p{
+    color: rgb(77, 239, 88);
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bolder;
+}

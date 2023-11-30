@@ -48,7 +48,7 @@ export default function Navbar() {
             </li>
           ))}
         </ul>
-        <button className="navbutton">Download Cv</button>
+        <button className="navbutton"><a href="https://drive.google.com/file/d/1ZOk9luujSyKr4Gj77rdvXl9qHiEDJ2v8/view?usp=drive_link" target="_blank">Download Cv</a></button>
       </nav>
     </>
   );

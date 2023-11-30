@@ -11,7 +11,9 @@ export default function Internships() {
         technology:["react","html","css","expressjs","mongodb"],
         description:"Comprehensive food delivery application using the MERN stack and Redux. The project included robust authentication, payment processing, food ordering, sorting, searching, and an efficient order-to-delivery mechanism,culminating in a seamless end-to-end user .",
         git: "https://github.com/VARMAMASTER/OrderIt",
-        live: "#",
+        live: "/wsa",
+        type:"Demo",
+
     },{
         title: "Flutter Developer",
         Image: "./images/iitd.jpg",
@@ -20,7 +22,9 @@ export default function Internships() {
         description: "This is real-time data visualization and dashboard application for the Smart Shearing Machine, integrating with a Firebase database to store and retrieve real-time machine data such as voltage, current, vibrations, and temperature. Implemented a variety of utilities to enhance functionality and user experience, resulting in improved monitoring and control capabilities.",
         technology: ["dart","flutter","firebase"],
         git : "https://github.com/VARMAMASTER/GraphSys",
-        live:"#",
+        live:"/iitd",
+        type:"Demo",
+
     },{
         title:"BIS Intern-Litd",
         Image: "./images/bis.png",
@@ -29,7 +33,9 @@ export default function Internships() {
         technology:["R&D","Data Visualisation"],
         description:"Intern under Scientist D, the Director of the Smart Manufacturing Subdivision within the LITD department BIS. Made prestandardizations, landscape studies and Case studies for the implementation of Industry 4.0 in Indian MSMEs, this will be referred by the Scientist for making Indian Standards for Industry 4.0, as a part of the Internship I have visited the Schneider electric SM Plant as well as IISc Bangalore.",
         git : "https://github.com/VARMAMASTER/BIS-Internship",
-        live: "#",
+        live: "/bis",
+        type:"Demo",
+
     }]
   return (
     <div id="Internships">
