@@ -23,7 +23,7 @@ export default function Projects() {
       company: "Ai & Deeplearning",
       description:
         "This is a Entriprise product which is usefull in industries for finding defects in ultrasonic Welding parts and applications",
-      technology: ["python", "flask"],
+      technology: ["html","css","python", "flask"],
       git: "",
       live: "",
       type: "Go Live \u{1F855}",
@@ -31,7 +31,7 @@ export default function Projects() {
     {
       title: "portfolio Website",
       Image: "./images/port.png",
-      time: " (November 20230",
+      time: " (November 2020)",
       company: "",
       technology: ["react", "html", "css", "javascript"],
       description: "At present your are in my portfolio website",

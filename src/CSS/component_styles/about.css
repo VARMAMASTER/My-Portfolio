@@ -4,17 +4,12 @@
     padding: 50px;
 }
 .about{
-    /* margin-top: 30px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: max-content;
-    /* background: rgb(40,117,119);
-    background: linear-gradient(30deg, rgb(7, 74, 77) 4%, rgba(46,8,57,1) 43%, rgb(39, 0, 57) 97%); */
-    /* background: rgb(52,59,52);
-background: linear-gradient(121deg, rgb(28, 34, 28) 0%, rgb(14, 64, 81) 47%, rgba(14,47,81,1) 100%); */
 }
 .info{
     padding: 10px;
@@ -37,16 +32,15 @@ background: linear-gradient(121deg, rgb(28, 34, 28) 0%, rgb(14, 64, 81) 47%, rgb
     border-radius: 10%;
     width: 350px;
     height:350px;
-    
 
 }
 .about-right{
     display: flex;
+    text-align: center;
     justify-content: center;
-    align-items: center;
     font-family: 'Josefin Sans', sans-serif;
     font-size: 95%;
-    padding: 10px;
+    padding: 20px;
     border-radius: 10%;
     border:3px solid #9a02d1;
     color: gold;
