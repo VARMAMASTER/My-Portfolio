@@ -5,7 +5,7 @@ import "../CSS/component_styles/Projects.css";
 export default function UpcomminProjects() {
   const intern_info = [
     {
-      title: "HealthConnect",
+      title: "Linktohealth",
       Image: "",
       time: " (December/10/2023)",
       company: "Health care and Socila media application",

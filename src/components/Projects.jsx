@@ -18,7 +18,7 @@ export default function Projects() {
     },
     {
       title: "Ultra-image-pro",
-      Image: "",
+      Image: "./images/opr.png",
       time: " (march - 2023)",
       company: "Ai & Deeplearning",
       description:
