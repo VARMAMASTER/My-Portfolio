@@ -1,16 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
-
 .Info{
-   background-image: url("../../images/intro_B1.jpg");
-   background-size: cover;
-   background-repeat: no-repeat;
+   background-color: #FFFFFF;
    margin: 0px 0px 0px 0px;
    width: 100%;
    height:fit-content;
    display: flex;
    flex-direction: row;
    justify-content: space-between;
-   
+   padding: 40px;
 }
 
 .image_help{
@@ -28,33 +24,34 @@
 }
 
 .information{
-   padding: 50px 0px 0px 50px;
-   color: white;
-   font-family: sans-serif;
+   padding: 20px;
+   color: #333333;
+   font-family: 'Inter', sans-serif;
 }
 
 .information h2{
    display: flex;
    flex-wrap: wrap;
-   font-family: "Dancing Script";
-   font-size: 50px;
-   color: gold;
+   font-family: 'Inter', sans-serif;
+   font-size: 32px;
+   color: #1A1A1A;
 }
 .information h1{
    width: 80%;
    display: flex;
    flex-wrap: wrap;
-   font-family: 'Courier New', Courier, monospace;
-   color: rgb(0,230,237);
+   font-family: 'Inter', sans-serif;
+   font-size: 24px;
+   color: #007BFF;
 }
 .information p{
    width: 80%;
    display: flex;
    flex-wrap: wrap;
-   font-family: monospace;
-   font-weight: bolder;
-   font-size: 20px;
-   color: rgb(138, 110, 154);
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   color: #555555;
 }
 .info_logos{
    display: flex;
@@ -66,13 +63,13 @@
    width:40px;
    height:45px;
   border-radius: 30px;
-   background-color: white;
+   background-color: transparent;
    display: flex;
    align-items: center;
    justify-content: center;
    transition: background-color 0.5s ease-in-out;
    &:hover{
-      background-color: rgb(65,29,84);
+      background-color: #007BFF;
    }
    
 }
@@ -83,16 +80,15 @@
    display: flex;
    justify-content: center;
    align-items: center;
-   background-color: white;
+   background-color: transparent;
    transition: background-color 0.5s ease-in-out;
    &:hover{
-      background-color: rgb(0, 123, 255);
+      background-color: #007BFF;
    }
 
 }
 .my_image_div{
    margin-top: 30px;
-   /* border:2px solid red; */
    border-radius: 50%;
    width:553px;
    height:655px;
@@ -100,28 +96,26 @@
    background-repeat: no-repeat;
    background-position: center;
    background-size: cover;
-   filter: contrast(105%) drop-shadow(13px 15px 11px rgb(1, 31, 75));
   
 }
 
 
 .contact{
-   font-family: 'Courier New', Courier, monospace;
-   font-weight: bolder;
+   font-family: 'Inter', sans-serif;
+   font-weight: 600;
    font-size: 20px;
    width: 150px;
    height:40px;
-   color :aqua;
-   background-color:transparent;
-   border:2px solid cyan ;
-   border-radius:20px ;
-   transition: background-color 0.5s ease-in;
+   color: #FFFFFF;
+   background-color: #007BFF;
+   border: none;
+   border-radius: 8px;
+   transition: background-color 0.3s ease-in-out;
 
    &:hover{
-      background-color: cyan;
-      color:black;
+      background-color: #0056b3;
+      color: #FFFFFF;
       cursor: pointer;
-
    }
 
 }
@@ -154,10 +148,10 @@
 }
 
 .myStack h3{
-   font-family: 'Courier New', Courier, monospace;
-   font-size: 28px;
+   font-family: 'Inter', sans-serif;
+   font-size: 20px;
    font-weight: bolder;
-   
+   color: #333333;
 }
 
 @media screen and (max-width: 470px) {
@@ -170,28 +164,32 @@
    .information h2{
       margin-top: 15px;
       margin-bottom: 25px;
-      width: 60%;
-      height: 90px;
+      width: 80%; /* Adjusted from 60% for potentially longer Inter text */
+      height: auto; /* Auto height */
       display: flex;
-      font-size: 45px;
+      font-size: 28px; /* Adjusted from 45px */
+      /* Inherits color and font-family from .information h2 */
    }
    .information h1{
       margin: 3px;
       width: 90%;
       display: flex;
-      font-size: 20px;
+      font-size: 20px; /* Adjusted from 20px, ensure it's smaller than h2 */
+      /* Inherits color and font-family from .information h1 */
    }
    .information{
       display: flex;
       flex-direction: column;
-      margin-left: 20px;
+      margin-left: 10px; /* Adjusted padding */
       width: 100%;
       padding: 0;
+      /* Inherits color and font-family from .information */
    }
    .information p{
       display: flex;
-      width: 85%;
-      font-size: 16px;
+      width: 90%; /* Adjusted width */
+      font-size: 14px; /* Adjusted from 16px */
+      /* Inherits color, font-family and weight from .information p */
    }
    .info_logos{
       margin-top: 20px;
@@ -201,24 +199,26 @@
       align-items: center;
    }
    .contact{
-      font-size: 16px;
-      width: 120px;
-
+      font-size: 14px; /* Adjusted font size */
+      width: 130px; /* Adjusted width */
+      /* Inherits font-family, color, background-color, border, border-radius from .contact */
+      /* Hover state is inherited */
       :active{
-         background-color: pink;
-         color: brown;
+         background-color: #004085; /* Darker shade for active, consistent with new theme */
+         color: #FFFFFF;
       }
       
    }
    .myStack{
-      width: 85%;
+      width: 90%; /* Adjusted width */
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
 
    }
    .myStack h3{
-      font-size: 25px;
+      font-size: 18px; /* Adjusted font size */
+      /* Inherits font-family and color from .myStack h3 */
    }
    .myStack img{
       width: 14%;
@@ -227,7 +227,7 @@
    .image_my{
       margin-top: 10px;
       display: inline;
-      filter: contrast(105%) drop-shadow(13px 15px 11px rgb(1, 31, 75));
+      /* filter removed */
    }
    
 }

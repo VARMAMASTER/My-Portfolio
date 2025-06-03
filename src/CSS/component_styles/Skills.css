@@ -1,42 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Ephesis&family=Josefin+Sans&display=swap');
 #Skills{
     padding-top: 40px;
 }
 .skills-container {
-    font-family: Josefin Sans;
-    padding-top: 10px;
+    font-family: 'Inter', sans-serif; /* Updated font */
+    padding: 20px 0; /* Added top/bottom padding */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap:wrap ;
-    /* background: rgb(40,117,119);
-    background: linear-gradient(30deg, rgb(7, 74, 77) 4%, rgba(46,8,57,1) 43%, rgb(39, 0, 57) 97%); */
-    /* background: rgb(7,53,53);
-    background: linear-gradient(29deg, rgba(7,53,53,1) 18%, rgba(4,98,105,1) 36%, rgba(46,8,57,1) 84%); */
+    background-color: #FFFFFF; /* Set background color */
     gap: 20px;
     height: fit-content;
-    width: 100vw;
+    width: 100%; /* Adjusted width */
     margin: 0 auto;
 }
 .title{
     margin: 10px 0px 10px 0px;
-    border: blue;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 900;
-    color: gold;
-    font-size: 40px;
-    background-color: #11012e;
+    font-family: 'Inter', sans-serif; /* Updated font */
+    font-weight: 700; /* Bold font weight */
+    color: #1A1A1A; /* Dark gray/black color */
+    font-size: 30px; /* Modern heading size */
+    background-color: transparent; /* Transparent background */
     border: none;
 }
 
 .skill-card {
     margin-bottom: 10px;
     width: 30%;
-    height: 34vh;
-    border-radius: 10px;
+    height: auto; /* Auto height */
+    min-height: 200px; /* Minimum height */
+    border-radius: 8px; /* Consistent border radius */
     padding: 20px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #E0E0E0; /* Light gray border */
+    border-left: 4px solid #007BFF; /* Accent color on the left */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle box shadow */
     transition: transform 0.3s ease-in-out;
 }
 
@@ -44,29 +43,16 @@
     transform: scale(1.05);
 }
 
-.programming-languages {
-    background-color: #1f55aa; /* Blue */
-}
+/* Removed specific background colors for .programming-languages, .front-end-technologies, .back-end-technologies, .data-science */
 
-.front-end-technologies {
-    background-color: #189b3b; /* Green */
-}
-
-.back-end-technologies {
-    background-color: #a92013; /* Red */
-}
-
-
-.data-science {
-    background-color: #be9f06; /* Orange */
-}
 
 
 
 .skill-title {
-    font-size: 1.8em;
+    font-family: 'Inter', sans-serif; /* Ensure font */
+    font-size: 20px; /* Adjusted font size */
     margin-bottom: 15px;
-    color: #ffffff;
+    color: #333333; /* Dark gray color */
 }
 
 .skill-list {
@@ -76,19 +62,17 @@
 }
 
 .skill-list-item {
+    font-family: 'Inter', sans-serif; /* Ensure font */
     margin-bottom: 8px;
-    color: #ffffff;
+    color: #555555; /* Medium-dark gray color */
 }
 
 /* Media Queries */
 @media screen and (max-width: 540px) {
     .skill-card {
-        width: 65%;
-        height: fit-content;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
-        transition: transform 0.3s ease-in-out;
+        width: 90%; /* Adjusted width for better layout */
+        height: auto; /* Ensure height fits content */
+        /* Inherits other styles like border-radius, padding, box-shadow, borders from the main .skill-card definition */
     }
 
    

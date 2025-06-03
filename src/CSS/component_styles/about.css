@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Ephesis&family=Josefin+Sans&display=swap');
-
 #About{
-    padding: 50px;
+    padding: 40px 20px; /* Adjusted padding */
+    background-color: #F8F9FA; /* Added background color */
 }
 .about{
     display: flex;
@@ -17,10 +16,14 @@
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    border-radius: 10%;
-    width: 55%;
+    border-radius: 8px; /* Adjusted border-radius */
+    width: 90%; /* Adjusted width */
+    max-width: 800px; /* Added max-width */
+    margin: 0 auto; /* Centering */
     height: fit-content;
-    border: 2px solid cyan;
+    background-color: #FFFFFF; /* Added background */
+    padding: 20px; /* Added padding */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Added box-shadow */
 }
 .about-left{
     
@@ -29,7 +32,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 10%;
+    border-radius: 8px; /* Consistent border radius */
     width: 350px;
     height:350px;
 
@@ -38,12 +41,13 @@
     display: flex;
     text-align: center;
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 95%;
+    font-family: 'Inter', sans-serif; /* Updated font-family */
+    font-size: 1em; /* Adjusted font-size */
     padding: 20px;
-    border-radius: 10%;
-    border:3px solid #9a02d1;
-    color: gold;
+    border-radius: 8px; /* Consistent border radius */
+    border: 1px solid #E0E0E0; /* Adjusted border */
+    color: #333333; /* Updated text color */
+    background-color: transparent; /* Transparent background */
     width: 350px;
     height:350px;
     overflow: auto;
@@ -51,12 +55,13 @@
 
 }
 .about h1{
-    color :gold;
-    font-family: 'Courier New', Courier, monospace;
+    color: #1A1A1A; /* Updated color */
+    font-family: 'Inter', sans-serif; /* Updated font-family */
+    font-size: 28px; /* Adjusted font-size */
 }
 
 .Education {
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Inter', sans-serif; /* Updated font-family */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -64,9 +69,12 @@
 
 .education-card {
     width: 300px;
-    border-radius: 10px;
+    border-radius: 8px; /* Consistent border radius */
     padding: 20px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    background-color: #FFFFFF; /* White background */
+    border: 1px solid #E0E0E0; /* Light gray border */
+    border-left: 4px solid #007BFF; /* Accent color on the left */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle box shadow */
     transition: transform 0.3s ease-in-out;
     margin: 10px;
     text-align: center;
@@ -76,48 +84,45 @@
     transform: scale(1.05);
 }
 
-.blue-card {
-    background: linear-gradient(to bottom right, #0066cc, #3399ff);
-}
+/* Removed specific background gradients for .blue-card, .violet-card, .blur-card */
 
-.violet-card {
-    background: linear-gradient(to bottom right, #800080, #cc99ff);
-}
 
-.blur-card {
-    background: linear-gradient(to bottom right, #4d4dff, #99ccff);
-}
-
-h2 {
-    color: #ffffff;
-    font-size: 1.5em;
+h2 { /* This targets h2 globally within this file if not careful, assuming it means h2 inside .education-card */
+    font-family: 'Inter', sans-serif; /* Ensure font */
+    color: #007BFF; /* Accent color */
+    font-size: 18px; /* Adjusted font size */
     margin-bottom: 10px;
 }
 
-p {
+p { /* This targets p globally, assuming it means p inside .education-card */
+    font-family: 'Inter', sans-serif; /* Ensure font */
+    color: #555555; /* Medium-dark gray */
     margin: 5px;
 }
 
 /* Responsive Styles */
 @media only screen and (max-width: 600px) {
     .education-card {
-        width: 80%;
+        width: 90%; /* Adjusted width */
+        /* Inherits other styles from .education-card */
     }
 }
 
 @media screen and (max-width:600px){
 
     .info{
-        padding: 10px;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        border-radius: 10%;
-        width: 90%;
-        height: fit-content;
-        border: 2px solid cyan;
+        /* padding: 10px; */ /* Padding is now on #About or .info directly */
+        /* display: flex; */ /* Already defined */
+        /* flex-wrap: wrap; */ /* Already defined */
+        /* justify-content: space-around; */ /* Already defined */
+        /* align-items: center; */ /* Already defined */
+        /* border-radius: 8px; */ /* Already defined and consistent */
+        width: 95%; /* Slightly wider for small screens */
+        /* height: fit-content; */ /* Already defined */
+        /* border: none; */ /* Border removed, relying on box-shadow */
+        /* box-shadow is inherited */
     }
-
+    /* .about-left and .about-right might need adjustments here if they don't wrap well.
+       For now, assuming they stack or their fixed widths are acceptable. */
 
 }
