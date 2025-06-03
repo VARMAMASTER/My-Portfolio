@@ -63,8 +63,6 @@ export default function Info() {
         </div>
         <div className="my_image_div"></div>
       </div>
-
-      <div className="gap"></div>
     </div>
     </>
   );

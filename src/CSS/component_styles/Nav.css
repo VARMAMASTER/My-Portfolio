@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
-
 .nav{
     z-index: 3;
     position: absolute;
@@ -7,11 +5,10 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: rgb(66,28,84);
-    background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);
+    background-color: #FFFFFF;
+    border-bottom: 1px solid #E0E0E0;
     position: sticky;
     top:0px;
-    border: 1px  rgb(47, 91, 91);
     
 }
 
@@ -29,11 +26,10 @@ ul{
     list-style: none;
 }
 .logo{
-    font-family: "Kaushan Script";
+    font-family: 'Inter', sans-serif;
     font-weight: bolder;
     font-size: 25px;
-    /* color: rgb(0,230,237); */
-    color: gold;
+    color: #333333;
     
 }
 
@@ -52,40 +48,38 @@ ul{
 }
 
 .navigator{
-    font-weight: bold;
+    font-weight: 600;
     font-size: 18px;
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-family: 'Inter', sans-serif;
     text-decoration: none;
-    color: rgb(168, 241, 255);
+    color: #333333;
     transition: color 0.5s ease-in;
     &:hover{
-        color: cyan;
+        color: #007BFF;
     }
     
 }
 
 .navbutton {
-    background-color: rgb(50, 190, 190);
+    background-color: #007BFF;
     font-weight: bold;
-    font-family:  monospace;
-    
+    font-family: 'Inter', sans-serif;
+    color: #FFFFFF;
     border: none;
-    border-radius: 25px;
+    border-radius: 8px;
     width: 12vw;
     height: 30px;
-    transition: box-shadow  0.4s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
 
     &:hover{
-        color: rgb(36, 37, 37);
-        background-color: aquamarine;
+        background-color: #0056b3;
         cursor: pointer;
-        box-shadow: 5px 10px 5px rgb(68, 95, 86) ;
     }
     
 }
 
 .navbutton a{
-    color: black;
+    color: #FFFFFF;
     text-decoration: none;
 }
 

@@ -12,7 +12,7 @@ export default function Home() {
     <>
       <Navbar/>
       <Info/>
-      <div className="bg">
+      <div>
       <About/>
       <Skills/>
       <InternshipsCard/>
