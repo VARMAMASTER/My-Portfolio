@@ -1,159 +1,256 @@
- @import url('https://fonts.googleapis.com/css2?family=Barlow&family=Ephesis&family=Josefin+Sans&family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
 
 .internships{
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 3rem;
+    padding: 4rem 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .infocard {
-    box-shadow:5px 5px 10px rgb(55, 156, 149);
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    background-color: rgb(203, 221, 220);
-    margin: 10px;
-    width: 45rem;
-    height: 23rem;
-    border-radius: 30px;
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: 3rem;
+    align-items: start;
+    background: rgba(15, 23, 42, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(99, 102, 241, 0.1);
+    margin: 0;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 24px;
+    padding: 2.5rem;
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.infocard::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(99, 102, 241, 0.08), transparent);
+    transition: left 0.7s ease;
+}
+
+.infocard:hover::before {
+    left: 100%;
+}
+
+.infocard:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99, 102, 241, 0.3);
+    box-shadow: 0 12px 40px rgba(99, 102, 241, 0.2);
 }
 .infocard-image{
-    box-shadow:5px 5px 10px 5px  rgb(64, 91, 114);
-    border-radius: 20px;
-    height: 80%;
-    width: 45%;
-  } 
-  .infocard-image img{
-    border-radius: 20px;
-      width: 100%;
-      height: 100%;
-  }
+    border-radius: 16px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+}
 
-  .infocard-title{
-    font-weight: bolder;
-    font-size: 15px;
-    text-align: center;
-  }
+.infocard-image::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(99, 102, 241, 0.1), rgba(139, 92, 246, 0.1));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.infocard:hover .infocard-image::after {
+    opacity: 1;
+}
+
+.infocard-image img{
+    border-radius: 16px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.infocard:hover .infocard-image img {
+    transform: scale(1.08);
+}
+
+.infocard-title{
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.5px;
+}
+
 .infocard-info{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 48%;
-    height: fit-content;
-
+    flex-direction: column;
+    gap: 1.2rem;
+    width: 100%;
 }
 
 .infocard-description{
-
-    font-weight: bolder;
-    color: rgb(39, 37, 37);
-    text-align: center;
-    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin-top: 0.5rem;
 }
 
 .infocard-techused{
-    font-weight: bold;
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
 }
 
 .tech{
-    margin: 10px 0px 10px 0px;
-    padding-left: 10px;
+    padding: 0.4rem 0.6rem;
     display: flex;
-    justify-content: space-around;
-    width: fit-content;
+    align-items: center;
+    background: rgba(99, 102, 241, 0.08);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 8px;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.tech:hover {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: rgba(99, 102, 241, 0.4);
+    transform: translateY(-2px);
 }
 
 .tech img{
-    height: 42px;
+    height: 28px;
+    width: 28px;
+    transition: transform 0.3s ease;
+    filter: brightness(1.1);
+}
+
+.tech:hover img {
+    transform: scale(1.15);
 }
 
 .infocard-buttons{
     display: flex;
-    justify-content: space-around;
-    width: 80%;
-    height: 40px;
-    :hover{
-        background-color: rgb(195, 232, 242);
-        cursor: pointer;
-    }
+    gap: 0.8rem;
+    margin-top: 0.5rem;
 }
 
 .infocard-button{
     border: none;
-    width: 100px;
-    border-radius: 20px;
-    background-color: rgb(175, 214, 248);
-
+    padding: 0.7rem 1.8rem;
+    border-radius: 8px;
+    background: rgba(99, 102, 241, 0.1);
+    border: 1px solid rgba(99, 102, 241, 0.3);
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 0.9rem;
 }
+
+.infocard-button::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.infocard-button:hover::before {
+    opacity: 1;
+}
+
+.infocard-button:hover {
+    border-color: #6366f1;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.3);
+}
+
 .infocard-button a{
-    font-weight: bolder;
     text-decoration: none;
-    color: black;
+    color: #cbd5e1;
+    position: relative;
+    z-index: 1;
+    transition: color 0.3s ease;
+}
+
+.infocard-button:hover a {
+    color: #ffffff;
 }
 
 
-@media screen and (max-width:815px) and (min-width:358px){
+@media screen and (max-width: 1024px) {
     .infocard{
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        width: 80%;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem;
     }
+
     .infocard-image{
-        border-radius: 20px;
-        height: 200px;
-        width: 270px;
-        margin:10px 0px 10px 0px;
-      }
-      .infocard-buttons{
-       margin: 10px 0px 10px 0px ;
+        width: 100%;
+        height: 220px;
     }
-    .infocard-info {
-        width: 85%;
-        
-    }
-    .tech{
-        margin: 10px 0px 10px 0px;
-        padding-left: 5px;
-        display: flex;
-        justify-content: space-around;
-        width: fit-content;
-    }
-    
 }
 
-@media screen and (max-width:357px) {
+@media screen and (max-width: 768px) {
+    .internships{
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+
     .infocard{
-        display: flex;
+        padding: 1.5rem;
+    }
+
+    .infocard-title{
+        font-size: 1.3rem;
+    }
+
+    .infocard-description{
+        font-size: 0.9rem;
+    }
+
+    .infocard-buttons{
         flex-direction: column;
-        height: fit-content;
-        width: 80%;
+        gap: 0.6rem;
     }
+
+    .infocard-button{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .infocard{
+        padding: 1.2rem;
+    }
+
     .infocard-image{
-        border-radius: 20px;
-        height: 200px;
-        width: 90%;
-        margin:10px 0px 10px 0px;
-      }
-      .infocard-buttons{
-       margin: 10px 0px 10px 0px ;
+        height: 180px;
     }
-    .infocard-info {
-        display: flex;
-        flex-wrap: wrap;
-        width: 85%;
-        height: fit-content;
+
+    .infocard-title{
+        font-size: 1.1rem;
     }
-    .infocard-techused{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-    }
-    
 }

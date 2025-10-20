@@ -1,10 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
 #Internships{
-    padding-top: 42px;
+    padding: 100px 20px;
+    position: relative;
+    overflow: hidden;
 }
+
+#Internships::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    left: 10%;
+    width: 550px;
+    height: 550px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.1), transparent 70%);
+    animation: floatInternOrb 20s ease-in-out infinite;
+    pointer-events: none;
+}
+
+#Internships::after {
+    content: '';
+    position: absolute;
+    bottom: -15%;
+    right: 5%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(139, 92, 246, 0.08), transparent 70%);
+    animation: floatInternOrb 25s ease-in-out infinite reverse;
+    pointer-events: none;
+}
+
+@keyframes floatInternOrb {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    33% { transform: translate(35px, -45px) scale(1.1); }
+    66% { transform: translate(-30px, 35px) scale(0.95); }
+}
+
 .Intern{
-    font-family: 'Courier New', Courier, monospace;
-    margin-top: 30px;
-    color: Gold;
-    font-size: 35px;
-    font-weight: bolder;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    margin-top: 0;
+    text-align: center;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6, #06b6d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 3rem;
+    position: relative;
+    animation: fadeInScale 0.8s ease-out;
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.Intern::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #6366f1, #8b5cf6, #06b6d4);
+    border-radius: 2px;
+    animation: expandWidth 0.8s ease-out 0.3s backwards;
+}
+
+@keyframes expandWidth {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 80px;
+        opacity: 1;
+    }
 }

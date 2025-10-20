@@ -3,20 +3,20 @@ import "../CSS/component_styles/Skills.css";
 
 const skillsData = [
   {
-    title: 'Programming Languages',
-    items: ['C++', 'Python', 'JavaScript', 'Dart', 'Data Structures and Algorithms']
+    title: 'AI/ML & GenAI',
+    items: ['Large Language Models (LLMs)', 'RAG Systems', 'Vector Databases (Chroma DB)', 'Scikit-Learn', 'Deep Learning', 'Computer Vision', 'MCP Agents']
   },
   {
-    title: 'Front End Technologies',
-    items: ['React', 'Flutter','Redux', 'HTML', 'CSS', 'Bootstrap', 'Tailwind CSS']
+    title: 'Cloud & DevOps',
+    items: ['AWS (Lambda, EC2, RDS, ECS)', 'AWS Step Functions', 'AWS SQS & CloudWatch', 'Docker', 'CI/CD Pipelines', 'WebSockets']
   },
   {
-    title: 'Back End Technologies',
-    items: ['Node.js', 'Express.js', 'PostgreSQL', 'Mongo DB', 'Firebase']
+    title: 'Backend & Databases',
+    items: ['Node.js', 'Express.js', 'Flask', 'MongoDB', 'PostgreSQL', 'Firebase', 'RESTful APIs', 'Microservices', 'OAuth']
   },
   {
-    title: 'Data Science',
-    items: ['Machine Learning', 'Deep Learning', 'SKlearn', 'Keras','NumPy', 'pandas']
+    title: 'Frontend & Mobile',
+    items: ['React', 'Flutter', 'Redux', 'JavaScript', 'HTML/CSS', 'Bootstrap', 'Tailwind CSS', 'Real-time Analytics (Grafana)']
   },
 ];
 

@@ -5,16 +5,16 @@ import github_icon from "../images/icons8-github-60.svg";
 
 export default function Info() {
   const TechStack = [
-    "html",
-    "css",
-    "tailwind",
-    "js",
+    "python",
+    "pytorch",
+    "tensorflow",
+    "aws",
+    "docker",
     "react",
     "nodejs",
-    "expressjs",
-    "flutter",
     "mongodb",
-    "firebase",
+    "postgresql",
+    "flask",
   ];
   return (
     <>
@@ -26,8 +26,8 @@ export default function Info() {
             <div className="image_my"></div>
           </div>
           <h1>Nampally Sai Kiran Varma</h1>
-          <h1>MERN Stack + Flutter Developer</h1>
-          <p>I'm very passionate and dedicated to my work.</p>
+          <h1>Lead AI Engineer | Full-Stack Developer</h1>
+          <p>Specialized in GenAI, LLM integration, RAG systems, and scalable full-stack AI solutions. 2+ years of experience leading teams and deploying production-ready systems handling 1M+ requests/second.</p>
           <div className="info_logos">
             <div className="github">
               <a
@@ -40,7 +40,7 @@ export default function Info() {
 
             <div className="linkedin">
               <a
-                href="https://www.linkedin.com/in/nampally-sai-kiran-varma-842a17190"
+                href="https://www.linkedin.com/in/nampally-sai-kiran-varma/"
                 target="_blank"
                 rel="noreferrer">
                 <img src={linkedin_icon} alt="linkedin" />
@@ -61,7 +61,13 @@ export default function Info() {
             ))}
           </div>
         </div>
-        <div className="my_image_div"></div>
+        <div className="image-container">
+          <div className="floating-bubble bubble-1"></div>
+          <div className="floating-bubble bubble-2"></div>
+          <div className="floating-bubble bubble-3"></div>
+          <div className="floating-bubble bubble-4"></div>
+          <div className="my_image_div"></div>
+        </div>
       </div>
 
       <div className="gap"></div>

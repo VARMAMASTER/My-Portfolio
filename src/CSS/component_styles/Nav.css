@@ -1,18 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
 
 .nav{
-    z-index: 3;
-    position: absolute;
-    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 8rem);
+    max-width: 1200px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background: rgb(66,28,84);
-    background: linear-gradient(59deg, rgba(66,28,84,1) 0%, rgba(14,75,81,1) 100%);
-    position: sticky;
-    top:0px;
-    border: 1px  rgb(47, 91, 91);
-    
+    justify-content: space-between;
+    padding: 1.2rem 2.5rem;
+
+    /* Modern floating navbar */
+    background: rgba(10, 14, 39, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(99, 102, 241, 0.2);
+    border-radius: 100px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4),
+                0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    animation: slideDown 0.8s ease-out;
+}
+
+.nav:hover {
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.5),
+                0 0 0 1px rgba(99, 102, 241, 0.3) inset;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
 }
 
 .hamburger{
@@ -28,21 +55,52 @@
 ul{
     list-style: none;
 }
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-image: url("../../images/myimage.png");
+    background-size: cover;
+    background-position: center;
+    border: 2px solid rgba(99, 102, 241, 0.3);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    cursor: pointer;
+}
+
+.nav-profile-image:hover {
+    transform: scale(1.1);
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2),
+                0 4px 12px rgba(99, 102, 241, 0.3);
+}
+
 .logo{
-    font-family: "Kaushan Script";
-    font-weight: bolder;
-    font-size: 25px;
-    /* color: rgb(0,230,237); */
-    color: gold;
-    
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #ffffff;
+    letter-spacing: -0.5px;
+    transition: all 0.3s ease;
+}
+
+.logo:hover {
+    color: #6366f1;
 }
 
 .ul{
     padding: 0;
-    width: 60vw;
     display: flex;
-    justify-content: space-between;
+    gap: 3rem;
     list-style: none;
+    align-items: center;
 }
 
 .ul li{
@@ -52,58 +110,101 @@ ul{
 }
 
 .navigator{
-    font-weight: bold;
-    font-size: 18px;
-    font-family: 'Courier New', Courier, monospace, sans-serif;
+    font-weight: 500;
+    font-size: 0.95rem;
+    font-family: 'Space Grotesk', sans-serif;
     text-decoration: none;
-    color: rgb(168, 241, 255);
-    transition: color 0.5s ease-in;
-    &:hover{
-        color: cyan;
-    }
-    
+    color: #cbd5e1;
+    position: relative;
+    padding: 0.5rem 0.8rem;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+}
+
+.navigator:hover {
+    color: #ffffff;
+    background: rgba(99, 102, 241, 0.1);
 }
 
 .navbutton {
-    background-color: rgb(50, 190, 190);
-    font-weight: bold;
-    font-family:  monospace;
-    
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    font-weight: 600;
+    font-family: 'Space Grotesk', sans-serif;
+    color: white;
     border: none;
-    border-radius: 25px;
-    width: 12vw;
-    height: 30px;
-    transition: box-shadow  0.4s ease-in-out;
+    border-radius: 50px;
+    padding: 0.7rem 1.8rem;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 20px rgba(99, 102, 241, 0.4);
+    font-size: 0.9rem;
+}
 
-    &:hover{
-        color: rgb(36, 37, 37);
-        background-color: aquamarine;
-        cursor: pointer;
-        box-shadow: 5px 10px 5px rgb(68, 95, 86) ;
-    }
-    
+.navbutton::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, #8b5cf6, #06b6d4);
+    transition: opacity 0.4s ease;
+    opacity: 0;
+    border-radius: 50px;
+}
+
+.navbutton:hover::before {
+    opacity: 1;
+}
+
+.navbutton:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(139, 92, 246, 0.5);
 }
 
 .navbutton a{
-    color: black;
+    color: white;
     text-decoration: none;
+    position: relative;
+    z-index: 1;
 }
 
-@media screen and (max-width: 710px) {
+@media screen and (max-width: 768px) {
+    .nav{
+        top: 1rem;
+        width: calc(100% - 2rem);
+        padding: 1rem 1.5rem;
+        border-radius: 20px;
+    }
+
     .hamburger{
         display: inline;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
 
+    .hamburger:hover {
+        transform: scale(1.1);
     }
-    .nav{
-        justify-content: space-around;
-        height: 60px;
-    }
+
     .navbutton{
-        width: 25%;
-        font-size: 12px;
+        padding: 0.6rem 1.2rem;
+        font-size: 0.85rem;
     }
+
     .ul{
         display: none;
     }
-   
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    .nav-profile-image {
+        width: 35px;
+        height: 35px;
+    }
+
+    .nav-left {
+        gap: 0.7rem;
+    }
 }

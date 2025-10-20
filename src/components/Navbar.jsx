@@ -38,7 +38,10 @@ export default function Navbar() {
       )}
       <nav className="nav">
         <div className="hamburger" onClick={toggle_sidebar}></div>
-        <div className="logo">VarmaMaster</div>
+        <div className="nav-left">
+          <div className="nav-profile-image"></div>
+          <div className="logo">VarmaMaster</div>
+        </div>
         <ul className="ul">
           {nav_links.map((item) => (
             <li key={item.name}>
