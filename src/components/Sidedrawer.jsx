@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "../CSS/component_styles/Sidedrawer.css";
 export default function Sidedraw(props) {
   return (
@@ -10,9 +11,17 @@ export default function Sidedraw(props) {
         <ul className="sideul">
           {props.nav_links.map((item) => (
             <li key={item.name}>
-              <a className="sideitems" href={item.Link}>
+              <Link
+                to={item.Link}
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={500}
+                className="sideitems"
+                onClick={props.sidebar}
+              >
                 {item.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
