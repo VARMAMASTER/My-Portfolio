@@ -45,7 +45,7 @@ export default function Navbar() {
         <ul className="ul">
           {nav_links.map((item) => (
             <li key={item.name}>
-              <Link to={`${item.Link}`} spy={true} smooth={true} offset={0} duration={500} className="navigator" >
+              <Link to={`${item.Link}`} spy={true} smooth={true} offset={-100} duration={500} className="navigator" >
                 {item.name}
               </Link>
             </li>

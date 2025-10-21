@@ -15,7 +15,7 @@ export default function Sidedraw(props) {
                 to={item.Link}
                 spy={true}
                 smooth={true}
-                offset={0}
+                offset={-100}
                 duration={500}
                 className="sideitems"
                 onClick={props.sidebar}
